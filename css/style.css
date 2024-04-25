@@ -1,3 +1,12 @@
+/* Reseteo */
+*{
+    margin: 0;
+    padding: 0;
+}
+
+html{ font-size: 62.5%; }
+body{ font-size: 16px; }
+
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 
 .box_80{
@@ -5,11 +14,7 @@
 }
 .txt_center{ text-align: center; }
 main{ background-color: #E2E2E2; }
-/* Reseteo */
-*{
-    margin: 0;
-    padding: 0;
-}
+
 h1, h2, h3, p, a, li{
     font-family: "Roboto", sans-serif;
 }
@@ -18,48 +23,61 @@ h1, h2, h3, p, a, li{
 nav{
     display: flex;
     justify-content: space-between;
-    padding: 15px 5%;
+    padding: 1.5rem 5%;
 }
 nav > .right{
     display: flex;
     align-items: center;
 }
-nav ul{ list-style: none; }
+nav ul{ 
+    list-style: none; 
+    padding-left: 0;
+}
 nav ul li{
     display: inline-block;
-    margin-right: 10px;
+    margin-right: 1rem;
 }
 nav a{
     text-decoration: none;
     color: #000;
 }
 
-#LogoNav{
-    padding: 10px 40px;
+#logoNav{
+    padding: 1rem 4rem;
     background-color: black;
     color: #fff;
+    width: fit-content;
 }
+
 #separator{
     display: block;
-    width: 2px;
-    height: 22px;
+    width: .2rem;
+    height: 2.2rem;
     background-color: #E2E2E2;
-    margin-right: 10px;
+    margin-right: 1rem;
 }
 
-
 #navBtns a{
-    padding: 5px 10px;
+    padding: .5rem 1rem;
     color: #fff;
-    border-radius: 5px;
+    border-radius: .5rem;
+    display: block;
 }
 #navBtns #singUp{ background-color: #0CC143; }
 #navBtns #login{ background-color: #0863F7; }
 
+@media (max-width: 700px){
+    #logoNav{ margin: auto; }
+    nav, nav > .right{ flex-direction: column; }
+    #navLinks{ padding: 1.5rem 0; }
+    #navBtns > li:last-child{ margin-right: 0; }
+    #separator{ display: none; }
+}
+
 /* Estilos del footer */
 footer{
     background-color: #C625FF;
-    padding: 100px 0;
+    padding: 10rem 0;
     text-align: center;
     color: #fff;
 }
@@ -74,14 +92,20 @@ footer{
 
 /* Estilos de la pagina Products */
 #cards_container{
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 3vw;
+    padding-top: 2.5rem;
 }
-#cards_container div{
-    height: 400px;
-    width: 300px;
-    background-color: #9E9C9C;
-    margin-right: 20px;
-    margin-top: 20px;
+
+@media (max-width: 1250px){
+    #cards_container{ grid-template-columns: repeat(3, 1fr); }
+}
+
+@media (max-width: 950px){
+    #cards_container{ grid-template-columns: repeat(2, 1fr); }
+}
+
+@media (max-width: 580px){
+    #cards_container{ grid-template-columns: repeat(1, 1fr); }
 }
