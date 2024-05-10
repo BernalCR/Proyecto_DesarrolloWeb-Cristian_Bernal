@@ -1,0 +1,46 @@
+/* Reseteo */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{ font-size: 62.5%; }
+body{ font-size: 16px; }
+
+// Paleta de colores
+$green: #44aa44;
+$white: #ffffff;
+$red:#ED1B34;
+$yellow:#f6eca7;
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+h1, h2, h3, p, a, li{ font-family: "Roboto", sans-serif; }
+h1{ font-size: clamp(3rem,4vw,4.5rem); color: $green;}
+h2{ font-size: clamp(2.8rem,4vw,3.8rem); color: $green;}
+h3{ font-size: clamp(1.8rem, 2.2vw, 2rem); }
+.box_80{ 
+    width: 90%;
+    margin: auto;
+ }
+.txt_center{ text-align: center; }
+
+.bkgnd_center{
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+}
+
+.banner{
+    height: clamp(45rem, 45vw, 50rem);
+}
+
+@media (max-width: 700px){
+    // Solo agrege el body para aumentar la especificidad
+    body .full-width-mobile,
+    .box_80{
+        width: 90%;
+        margin: auto;
+        padding: 0;
+    }
+}

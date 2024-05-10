@@ -1,0 +1,19 @@
+h1{
+    color: $green;
+    margin-top: 7rem;
+    margin-bottom: 2rem;
+}
+#products_banner{
+    width: 100%;
+    object-fit: cover;
+}
+.products_title{
+    margin-top: 7rem;
+    border-bottom: 1px solid $green;
+}
+.brands_box{
+    img{
+        min-width: 1%;
+        width: clamp(100px, 19vw, 150px);
+    }
+}

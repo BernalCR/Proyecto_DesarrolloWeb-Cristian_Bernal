@@ -1,0 +1,49 @@
+#become_VIP{
+    div{ width: 50%;}
+    img{ width: 50%; }
+    margin-bottom: 7rem;
+}
+
+.box_plan{
+    background-color: $yellow;
+    border-radius: 8px;
+    width: min(40%, 50rem);
+    padding: 2rem;
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+
+    &:hover{
+        transform: scale(1.03);
+    }
+
+    img{ 
+        width: 5rem;
+        margin: auto;
+        display: block;
+        margin-bottom: 8px;
+    }
+    h3 + p{
+        margin: 20px 0;
+    }
+    ul{
+        padding: 0;
+        li{
+            list-style-type: none;
+            display: flex;
+            align-items: center;
+            font-size: 1.8rem;
+            border-bottom: 1px solid #000;
+            margin-bottom: 10px;
+            padding-bottom: 10px;
+            span{
+                margin-right: 10px;
+                display: block;
+            }
+        }
+    }
+}
+.box_plan:first-child{ margin-right: 3rem; }
+
+@media (max-width: 700px){
+    .box_plan:first-child{ margin: 0 0 3rem 0; }
+}

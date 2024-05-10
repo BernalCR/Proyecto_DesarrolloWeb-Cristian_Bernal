@@ -1,0 +1,63 @@
+@import './utilities/global-styles';
+@import './sections/nav';
+@import './sections/home';
+@import './sections/products';
+@import './sections/plans';
+ 
+
+/* Estilos del footer */
+footer{
+    display: flex;
+    justify-content: center;
+    background-color: $green;
+    padding: 10rem 0;
+    text-align: center;
+    color: #fff;
+    margin-top: 7rem;
+    img{
+        width: 2.5rem;
+        margin-left: 1.1em;
+    }
+}
+
+
+/* Estilos de la pagina index */
+#homeBanner{
+    width: 100%;
+    max-height: 50vh;
+}
+
+
+/* Estilos de la pagina Products */
+#cards_container{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 3vw;
+    padding-top: 2.5rem;
+}
+
+@media (max-width: 1250px){
+    #cards_container{ grid-template-columns: repeat(3, 1fr); }
+}
+
+@media (max-width: 950px){
+    #cards_container{ grid-template-columns: repeat(2, 1fr); }
+}
+
+@media (max-width: 580px){
+    #cards_container{ grid-template-columns: repeat(1, 1fr); }
+}
+
+#whyUs__img{ width: min(65vw, 500px); }
+@media (max-width: 600px){
+    #whyUs__img{ width: 100%; }
+}
+
+
+
+
+
+@media (max-width: 700px){
+    .col_100_mobile{ width: 100% !important; }
+}
+
