@@ -200,6 +200,13 @@ h1 {
   width: clamp(100px, 19vw, 150px);
 }
 
+.card {
+  cursor: pointer;
+}
+.card:hover .btn {
+  background-color: #44aa44;
+}
+
 #become_VIP {
   margin-bottom: 7rem;
 }
