@@ -32,11 +32,6 @@ h3 {
   font-size: clamp(1.8rem, 2.2vw, 2rem);
 }
 
-.box_80 {
-  width: 90%;
-  margin: auto;
-}
-
 .txt_center {
   text-align: center;
 }
@@ -51,12 +46,16 @@ h3 {
   height: clamp(45rem, 45vw, 50rem);
 }
 
-@media (max-width: 700px) {
-  body .full-width-mobile, body #home-banner div, #home-banner body div,
-  .box_80 {
+.box_container {
+  width: 80%;
+  margin: auto;
+  padding: 0;
+  max-width: 1200px;
+}
+
+@media (max-width: 950px) {
+  .box_container {
     width: 90%;
-    margin: auto;
-    padding: 0;
   }
 }
 nav {
@@ -122,7 +121,7 @@ nav .right #navBtns #login {
     flex-direction: column;
   }
   nav .right #navLinks {
-    padding: 1.5rem 0;
+    padding: 1rem 0;
   }
   nav .right #navBtns li:last-child {
     margin-right: 0;
@@ -132,18 +131,41 @@ nav .right #navBtns #login {
   }
 }
 #home_banner {
-  background-image: url(../Resources/bannerHome.jpg);
+  background-image: url(../Resources/Screenshot.png);
   align-content: center;
   margin-bottom: 7rem;
+  background-position: 25% center;
+  width: 100%;
+  max-height: 50vh;
 }
 #home_banner div {
   width: min(70%, 800px);
-  padding-left: 5%;
+  padding-right: 5%;
+  margin-left: auto;
+  text-align: right;
 }
 #home_banner div h1 {
   font-size: clamp(2.5rem, 4vw, 3.5rem);
   color: #ED1B34;
   margin: 7px 0 8px;
+}
+#home_banner div h2, #home_banner div p {
+  color: #ffffff;
+}
+
+#intro-infoRow {
+  display: grid;
+  gap: 2rem;
+  margin-bottom: 7rem;
+}
+#intro-infoRow div {
+  display: flex;
+  align-items: center;
+}
+#intro-infoRow div svg {
+  font-size: 2rem;
+  flex-shrink: 0;
+  margin-right: 2rem;
 }
 
 #categoriesBox {
@@ -179,6 +201,13 @@ nav .right #navBtns #login {
   font-size: 1.3em;
 }
 
+@media (max-width: 900px) {
+  #intro-infoRow svg {
+    font-size: 2rem;
+    flex-shrink: 0;
+    margin-right: 2rem;
+  }
+}
 h1 {
   color: #44aa44;
   margin-top: 7rem;
@@ -200,10 +229,16 @@ h1 {
   width: clamp(100px, 19vw, 150px);
 }
 
-.card {
+/* Estilos de la pagina Products */
+#cards_container {
+  display: grid;
+  gap: 3vw;
+  padding-top: 2.5rem;
+}
+#cards_container .card {
   cursor: pointer;
 }
-.card:hover .btn {
+#cards_container .card:hover .btn {
   background-color: #44aa44;
 }
 
@@ -218,6 +253,7 @@ h1 {
 }
 
 .box_plan {
+  position: relative;
   background-color: #f6eca7;
   border-radius: 8px;
   width: min(40%, 50rem);
@@ -239,6 +275,7 @@ h1 {
 }
 .box_plan ul {
   padding: 0;
+  margin-bottom: 5rem;
 }
 .box_plan ul li {
   list-style-type: none;
@@ -252,6 +289,13 @@ h1 {
 .box_plan ul li span {
   margin-right: 10px;
   display: block;
+}
+.box_plan button {
+  position: absolute;
+  font-size: 1.5rem;
+  transform: translateX(-50%);
+  left: 50%;
+  bottom: 2rem;
 }
 
 .box_plan:first-child {
@@ -278,32 +322,22 @@ footer img {
   margin-left: 1.1em;
 }
 
-/* Estilos de la pagina index */
-#homeBanner {
-  width: 100%;
-  max-height: 50vh;
-}
-
-/* Estilos de la pagina Products */
-#cards_container {
-  display: grid;
+.col_4_big {
   grid-template-columns: repeat(4, 1fr);
-  gap: 3vw;
-  padding-top: 2.5rem;
 }
 
 @media (max-width: 1250px) {
-  #cards_container {
+  .col_3_large {
     grid-template-columns: repeat(3, 1fr);
   }
 }
 @media (max-width: 950px) {
-  #cards_container {
+  .col_2_medium {
     grid-template-columns: repeat(2, 1fr);
   }
 }
 @media (max-width: 580px) {
-  #cards_container {
+  .col_1_small {
     grid-template-columns: repeat(1, 1fr);
   }
 }

@@ -1,6 +1,6 @@
 h1{
     color: $green;
-    margin-top: 7rem;
+    margin-top: $maginSections;
     margin-bottom: 2rem;
 }
 #products_banner{
@@ -8,7 +8,7 @@ h1{
     object-fit: cover;
 }
 .products_title{
-    margin-top: 7rem;
+    margin-top: $maginSections;
     border-bottom: 1px solid $green;
 }
 .brands_box{
@@ -17,12 +17,18 @@ h1{
         width: clamp(100px, 19vw, 150px);
     }
 }
+/* Estilos de la pagina Products */
+#cards_container{
+    display: grid;
+    gap: 3vw;
+    padding-top: 2.5rem;
 
-.card{
-    cursor: pointer;
-    &:hover{
-        .btn{
-            background-color: $green;
+    .card{
+        cursor: pointer;
+        &:hover{
+            .btn{
+                background-color: $green;
+            }
         }
-    }
+    } 
 }
