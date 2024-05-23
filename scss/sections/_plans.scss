@@ -1,7 +1,7 @@
 #become_VIP{
+    @extend .flex_y_center;
     div{ width: 50%;}
     img{ width: 50%; }
-    margin-bottom: $maginSections;
 }
 
 .box_plan{
@@ -31,12 +31,11 @@
         margin-bottom: 5rem;
         li{
             list-style-type: none;
-            display: flex;
-            align-items: center;
             font-size: 1.8rem;
             border-bottom: 1px solid #000;
             margin-bottom: 10px;
             padding-bottom: 10px;
+            @extend .flex_y_center;
             span{
                 margin-right: 10px;
                 display: block;

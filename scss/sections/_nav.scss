@@ -8,15 +8,13 @@ nav{
     z-index: 10;
 
     #logoNav{
-        padding: 1rem 4rem;
-        background-color: black;
-        color: #fff;
-        width: fit-content;
+        img{
+            width: 50px;
+        }
     }
 
     .right{
-        display: flex;
-        align-items: center;
+        @extend .flex_y_center;
 
         & > div{
             display: block;
@@ -54,6 +52,7 @@ nav{
 }
 @media (max-width: 700px){
     nav{
+        padding: 1rem 5% 1.5rem;
         flex-direction: column;
 
         #logoNav{ margin: auto; }
@@ -61,9 +60,10 @@ nav{
         .right{ 
             flex-direction: column; 
 
-            #navLinks{ padding: 1rem 0; }
+            #navLinks{ padding: .5rem 0; }
             #navBtns {
                 li:last-child{ margin-right: 0; }
+                a{ padding: .1rem 1rem; }
             } 
 
             & > div{ display: none; }

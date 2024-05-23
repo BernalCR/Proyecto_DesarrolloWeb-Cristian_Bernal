@@ -1,17 +1,18 @@
-h1{
-    color: $green;
-    margin-top: $maginSections;
-    margin-bottom: 2rem;
+.box_container{
+    h1{
+        color: $green;
+        margin-bottom: 2rem;
+    }
 }
 #products_banner{
     width: 100%;
     object-fit: cover;
 }
 .products_title{
-    margin-top: $maginSections;
     border-bottom: 1px solid $green;
 }
 .brands_box{
+    @extend .flex_x_center;
     img{
         min-width: 1%;
         width: clamp(100px, 19vw, 150px);

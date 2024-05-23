@@ -1,0 +1,96 @@
+
+
+@keyframes arrowdown {
+    0%{top:0px;}
+    100%{top:7px;}
+}
+
+#servicesBanner{
+    background-image: url("../Resources/veterinaria_banner.png");
+    padding: 3rem 10% 3rem 3rem;
+    margin: 3rem;
+    border-radius: 1rem;
+    position: relative;
+    @extend .bkgnd_center; 
+    @extend .flex_y_center;
+    justify-content: flex-end;
+
+    &::before{
+        content: "";
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        right: 0;
+        left: 0;
+        background: linear-gradient(90deg, rgba(255, 255, 255, 0) 45%, rgba(0, 0, 0, 0.15) 130%);
+    }
+    div{
+        z-index: 1;
+        h1, p{
+            color: #fff;
+            text-align: right;
+        }
+    
+        svg{
+            font-size:50px;
+            position:relative;
+            animation: arrowdown .4s alternate infinite;
+            display: block;
+            margin-left: auto;
+        } 
+    }
+}
+
+#premiumFood{
+    @extend .flex_y_center;
+    img{
+        width: 50%;
+    }
+
+    & > div{
+        width: 40%;
+        div{
+            padding: 1.5rem 0;
+            border-top: 2px solid $green;
+            border-bottom: 2px solid $green;
+        }
+    }
+}
+
+#veterinariaSec{
+    &>div{
+        @extend .flex_y_center;
+
+        div{
+            width: 48%;
+            img{
+                width: 100%;
+            }
+        }
+    
+        div:last-child img:last-child{
+            margin-top: 3rem;
+        }
+    }
+}
+
+@media (max-width: 700px){
+    #servicesBanner{
+        width: 90%;
+        margin: 3rem auto;
+        padding: 3rem;
+    }
+
+    #premiumFood{
+        img, &>div{
+            width: 100%;
+            margin-bottom: 3rem;
+        }
+    }
+
+    #veterinariaSec{
+        &>div{
+            margin: 3rem 0;
+        }
+    }
+}

@@ -1,5 +1,5 @@
 /* Reseteo */
-@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Hind:wght@300;400;500;600;700&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -14,8 +14,17 @@ body {
   font-size: 16px;
 }
 
-h1, h2, h3, p, a, li {
-  font-family: "Roboto", sans-serif;
+section {
+  margin-bottom: 7rem;
+}
+
+h1, h2, h3 {
+  font-family: "Montserrat", sans-serif;
+  letter-spacing: -1px;
+}
+
+p, a, li {
+  font-family: "Hind", sans-serif;
 }
 
 h1 {
@@ -36,10 +45,26 @@ h3 {
   text-align: center;
 }
 
-.bkgnd_center, #home_banner {
+.bkgnd_center, #servicesBanner, #home_banner {
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
+}
+
+.flex_y_center, #veterinariaSec > div, #premiumFood, #servicesBanner, .box_plan ul li, #become_VIP, #categoriesBox div, #home_banner, nav .right {
+  display: flex;
+  align-items: center;
+}
+
+.flex_x_center, footer, .brands_box {
+  display: flex;
+  justify-content: center;
+}
+
+.flex_center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .banner {
@@ -58,6 +83,16 @@ h3 {
     width: 90%;
   }
 }
+@media (min-width: 700px) {
+  .hide_desk {
+    display: none;
+  }
+}
+@media (max-width: 700px) {
+  .hide_mobile {
+    display: none;
+  }
+}
 nav {
   display: flex;
   justify-content: space-between;
@@ -67,15 +102,8 @@ nav {
   background-color: #44aa44;
   z-index: 10;
 }
-nav #logoNav {
-  padding: 1rem 4rem;
-  background-color: black;
-  color: #fff;
-  width: fit-content;
-}
-nav .right {
-  display: flex;
-  align-items: center;
+nav #logoNav img {
+  width: 50px;
 }
 nav .right > div {
   display: block;
@@ -112,6 +140,7 @@ nav .right #navBtns #login {
 
 @media (max-width: 700px) {
   nav {
+    padding: 1rem 5% 1.5rem;
     flex-direction: column;
   }
   nav #logoNav {
@@ -121,28 +150,39 @@ nav .right #navBtns #login {
     flex-direction: column;
   }
   nav .right #navLinks {
-    padding: 1rem 0;
+    padding: 0.5rem 0;
   }
   nav .right #navBtns li:last-child {
     margin-right: 0;
+  }
+  nav .right #navBtns a {
+    padding: 0.1rem 1rem;
   }
   nav .right > div {
     display: none;
   }
 }
 #home_banner {
-  background-image: url(../Resources/Screenshot.png);
-  align-content: center;
-  margin-bottom: 7rem;
+  background-image: url(../Resources/bannerHome.png);
   background-position: 25% center;
   width: 100%;
   max-height: 50vh;
+  position: relative;
+}
+#home_banner::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  background: linear-gradient(90deg, rgba(0, 0, 0, 0.15) 20%, rgba(255, 255, 255, 0) 100%);
 }
 #home_banner div {
+  position: relative;
+  z-index: 1;
   width: min(70%, 800px);
-  padding-right: 5%;
-  margin-left: auto;
-  text-align: right;
+  padding-left: 5%;
 }
 #home_banner div h1 {
   font-size: clamp(2.5rem, 4vw, 3.5rem);
@@ -156,7 +196,6 @@ nav .right #navBtns #login {
 #intro-infoRow {
   display: grid;
   gap: 2rem;
-  margin-bottom: 7rem;
 }
 #intro-infoRow div {
   display: flex;
@@ -168,17 +207,16 @@ nav .right #navBtns #login {
   margin-right: 2rem;
 }
 
-#categoriesBox {
-  padding: 7rem 0;
-}
 #categoriesBox div {
   max-width: 800px;
   margin: 3rem auto 0;
+  justify-content: space-between;
 }
 #categoriesBox div a img {
-  width: auto;
-  height: 100px;
+  width: 100px;
   border-radius: 50%;
+  display: block;
+  margin: auto;
 }
 #categoriesBox div a p {
   text-align: center;
@@ -208,9 +246,13 @@ nav .right #navBtns #login {
     margin-right: 2rem;
   }
 }
-h1 {
+@media (max-width: 650px) {
+  #categoriesBox img {
+    width: 20vw !important;
+  }
+}
+.box_container h1 {
   color: #44aa44;
-  margin-top: 7rem;
   margin-bottom: 2rem;
 }
 
@@ -220,7 +262,6 @@ h1 {
 }
 
 .products_title {
-  margin-top: 7rem;
   border-bottom: 1px solid #44aa44;
 }
 
@@ -242,9 +283,6 @@ h1 {
   background-color: #44aa44;
 }
 
-#become_VIP {
-  margin-bottom: 7rem;
-}
 #become_VIP div {
   width: 50%;
 }
@@ -279,8 +317,6 @@ h1 {
 }
 .box_plan ul li {
   list-style-type: none;
-  display: flex;
-  align-items: center;
   font-size: 1.8rem;
   border-bottom: 1px solid #000;
   margin-bottom: 10px;
@@ -307,15 +343,87 @@ h1 {
     margin: 0 0 3rem 0;
   }
 }
+@keyframes arrowdown {
+  0% {
+    top: 0px;
+  }
+  100% {
+    top: 7px;
+  }
+}
+#servicesBanner {
+  background-image: url("../Resources/veterinaria_banner.png");
+  padding: 3rem 10% 3rem 3rem;
+  margin: 3rem;
+  border-radius: 1rem;
+  position: relative;
+  justify-content: flex-end;
+}
+#servicesBanner::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  background: linear-gradient(90deg, rgba(255, 255, 255, 0) 45%, rgba(0, 0, 0, 0.15) 130%);
+}
+#servicesBanner div {
+  z-index: 1;
+}
+#servicesBanner div h1, #servicesBanner div p {
+  color: #fff;
+  text-align: right;
+}
+#servicesBanner div svg {
+  font-size: 50px;
+  position: relative;
+  animation: arrowdown 0.4s alternate infinite;
+  display: block;
+  margin-left: auto;
+}
+
+#premiumFood img {
+  width: 50%;
+}
+#premiumFood > div {
+  width: 40%;
+}
+#premiumFood > div div {
+  padding: 1.5rem 0;
+  border-top: 2px solid #44aa44;
+  border-bottom: 2px solid #44aa44;
+}
+
+#veterinariaSec > div div {
+  width: 48%;
+}
+#veterinariaSec > div div img {
+  width: 100%;
+}
+#veterinariaSec > div div:last-child img:last-child {
+  margin-top: 3rem;
+}
+
+@media (max-width: 700px) {
+  #servicesBanner {
+    width: 90%;
+    margin: 3rem auto;
+    padding: 3rem;
+  }
+  #premiumFood img, #premiumFood > div {
+    width: 100%;
+    margin-bottom: 3rem;
+  }
+  #veterinariaSec > div {
+    margin: 3rem 0;
+  }
+}
 /* Estilos del footer */
 footer {
-  display: flex;
-  justify-content: center;
   background-color: #44aa44;
   padding: 10rem 0;
-  text-align: center;
   color: #fff;
-  margin-top: 7rem;
 }
 footer img {
   width: 2.5rem;
