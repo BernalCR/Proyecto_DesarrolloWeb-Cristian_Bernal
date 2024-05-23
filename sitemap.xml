@@ -8,28 +8,33 @@
 
 
 <url>
-  <loc>https://bernalcr.github.io/Proyecto_DesarrolloWeb-Cristian_Bernal/index.html</loc>
-  <lastmod>2024-05-10T02:27:38+00:00</lastmod>
+  <loc>https://bernalcr.github.io/Proyecto_DesarrolloWeb-Cristian_Bernal/</loc>
+  <lastmod>2024-05-23T13:28:07+00:00</lastmod>
   <priority>1.00</priority>
 </url>
 <url>
+  <loc>https://bernalcr.github.io/Proyecto_DesarrolloWeb-Cristian_Bernal/index.html</loc>
+  <lastmod>2024-05-23T13:28:07+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
   <loc>https://bernalcr.github.io/Proyecto_DesarrolloWeb-Cristian_Bernal/pages/products.html</loc>
-  <lastmod>2024-05-10T02:27:38+00:00</lastmod>
+  <lastmod>2024-05-23T13:28:07+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://bernalcr.github.io/Proyecto_DesarrolloWeb-Cristian_Bernal/pages/plans.html</loc>
-  <lastmod>2024-05-10T02:27:38+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://bernalcr.github.io/Proyecto_DesarrolloWeb-Cristian_Bernal/pages/why-us.html</loc>
-  <lastmod>2024-05-10T02:27:38+00:00</lastmod>
+  <lastmod>2024-05-23T13:28:07+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://bernalcr.github.io/Proyecto_DesarrolloWeb-Cristian_Bernal/pages/services.html</loc>
-  <lastmod>2024-05-10T02:27:38+00:00</lastmod>
+  <lastmod>2024-05-23T13:28:07+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://bernalcr.github.io/Proyecto_DesarrolloWeb-Cristian_Bernal/pages/about-us.html</loc>
+  <lastmod>2024-05-23T13:28:07+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 
