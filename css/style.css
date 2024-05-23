@@ -1,6 +1,6 @@
 /* Reseteo */
 @import url("https://fonts.googleapis.com/css2?family=Hind:wght@300;400;500;600;700&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
-* {
+body * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -205,6 +205,14 @@ nav .right #navBtns #login {
   font-size: 2rem;
   flex-shrink: 0;
   margin-right: 2rem;
+}
+
+.toast {
+  position: absolute;
+  top: 9rem;
+  right: 3rem;
+  z-index: 1;
+  font-size: 1.3rem;
 }
 
 #categoriesBox div {
@@ -417,6 +425,35 @@ nav .right #navBtns #login {
   }
   #veterinariaSec > div {
     margin: 3rem 0;
+  }
+}
+#contactForm {
+  background-color: #f6eca7;
+  border-radius: 1rem;
+  padding: 3rem;
+  width: 65%;
+  margin: auto;
+}
+#contactForm legend {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+#contactForm div:not(:last-child) {
+  margin-bottom: 2rem;
+}
+#contactForm textarea {
+  width: 100%;
+  height: 8rem;
+}
+
+@media (max-width: 950px) {
+  #contactForm {
+    width: 80%;
+  }
+}
+@media (max-width: 700px) {
+  #contactForm {
+    width: 100%;
   }
 }
 /* Estilos del footer */

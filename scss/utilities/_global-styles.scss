@@ -1,5 +1,5 @@
 /* Reseteo */
-*{
+body *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -55,9 +55,7 @@ h3{ font-size: clamp(1.8rem, 2.2vw, 2rem); }
     align-items: center;
 }
 
-.banner{
-    height: clamp(45rem, 45vw, 50rem);
-}
+.banner{ height: clamp(45rem, 45vw, 50rem); }
 
 .box_container{ 
     width: 80%;
@@ -67,15 +65,10 @@ h3{ font-size: clamp(1.8rem, 2.2vw, 2rem); }
  }
 @media (max-width: 950px){
     .box_container{ width: 90%; }
-    $maginSections: 4rem;
 }
 @media (min-width: 700px){
-    .hide_desk{
-        display: none;
-    }
+    .hide_desk{ display: none; }
 }
 @media (max-width: 700px){
-    .hide_mobile{
-        display: none;
-    }
+    .hide_mobile{ display: none; }
 }
