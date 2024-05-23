@@ -33,7 +33,7 @@ nav{
                 margin-right: 1rem;
                 a{
                     text-decoration: none;
-                    color: #000;
+                    color: $white;
                 }
             }
         }
@@ -41,7 +41,7 @@ nav{
         #navBtns{
             a{
                 padding: .5rem 1rem;
-                color: #fff;
+                color: $white;
                 border-radius: .5rem;
                 display: block;
             }

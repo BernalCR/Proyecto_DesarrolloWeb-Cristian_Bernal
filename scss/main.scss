@@ -4,49 +4,7 @@
 @import './sections/products';
 @import './sections/plans';
 @import './sections/services';
-@import './sections/why-us';
+@import './sections/about-us';
+@import './sections/footer';
  
-
-/* Estilos del footer */
-footer{
-    @extend .flex_x_center;
-    background-color: $green;
-    padding: 10rem 0;
-    color: #fff;
-    img{
-        width: 2.5rem;
-        margin-left: 1.1em;
-    }
-}
-
-
-
-
-
-
-.col_4_big{ grid-template-columns: repeat(4, 1fr); }
-@media (max-width: 1250px){
-    .col_3_large{ grid-template-columns: repeat(3, 1fr); }
-}
-
-@media (max-width: 950px){
-    .col_2_medium{ grid-template-columns: repeat(2, 1fr); }
-}
-
-@media (max-width: 580px){
-    .col_1_small{ grid-template-columns: repeat(1, 1fr); }
-}
-
-#whyUs__img{ width: min(65vw, 500px); }
-@media (max-width: 600px){
-    #whyUs__img{ width: 100%; }
-}
-
-
-
-
-
-@media (max-width: 700px){
-    .col_100_mobile{ width: 100% !important; }
-}
 
