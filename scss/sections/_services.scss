@@ -6,12 +6,12 @@
 }
 
 #servicesBanner{
-    background-image: url("../Resources/veterinaria_banner.png");
+    background-image: url("../Resources/Gallery/veterinaria_banner.png");
     padding: 3rem 10% 3rem 3rem;
     margin: 3rem;
     border-radius: 1rem;
     position: relative;
-    @extend .bkgnd_center; 
+    @extend .bkgnd_center;   
     @extend .flex_y_center;
     justify-content: flex-end;
 

@@ -185,11 +185,12 @@ nav .right #navBtns #login {
   }
 }
 #home_banner {
-  background-image: url(../Resources/bannerHome.png);
+  background-image: url(../Resources/Gallery/bannerHome.png);
   background-position: 25% center;
   width: 100%;
   max-height: 50vh;
   position: relative;
+  height: 100vh;
 }
 #home_banner::before {
   content: "";
@@ -386,7 +387,7 @@ nav .right #navBtns #login {
   }
 }
 #servicesBanner {
-  background-image: url("../Resources/veterinaria_banner.png");
+  background-image: url("../Resources/Gallery/veterinaria_banner.png");
   padding: 3rem 10% 3rem 3rem;
   margin: 3rem;
   border-radius: 1rem;
