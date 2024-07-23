@@ -306,15 +306,15 @@ nav .right #navBtns #login {
 }
 
 /* Estilos de la pagina Products */
-#cards_container {
+.cards_container {
   display: grid;
   gap: 3vw;
   padding-top: 2.5rem;
 }
-#cards_container .card {
+.cards_container .card {
   cursor: pointer;
 }
-#cards_container .card:hover .btn {
+.cards_container .card:hover .btn {
   background-color: #44aa44;
 }
 
