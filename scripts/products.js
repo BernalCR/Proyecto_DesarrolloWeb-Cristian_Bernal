@@ -6,12 +6,13 @@ let productsList = [
                 name: "Pro Plan Gatos Cuidado Urinario Urinary 3 Kg",
                 price: 142.950,
                 img: "../Resources/Gallery/pro-plan-urinary-3kg-min.jpg",
-                
+                bestSeller: true,
             },
             {
                 name: "Pedigree High Protein Alimento Completo y Balanceado 4 Kg",
                 price: 72.80,
                 img: "../Resources/Gallery/pedigree-high-protein-4kg-min.jpg",
+                bestSeller: true,
             },
             {
                 name: "Max Professional Line Perros Senior Pollo y Arroz 15 Kg",
@@ -33,6 +34,7 @@ let productsList = [
                 name: "BR for CAT Bombonera para gatos reduce bolas de pelo 350 gr",
                 price: 22.300,
                 img: "../Resources/Gallery/br-cat-bombonera-350gr-snack-min.jpg",
+                bestSeller: true,
             },
             {
                 name: "Churu Snack Receta de Atún con Salmón x 4 Unds 14 g  (Rosa)",
@@ -91,47 +93,11 @@ let productsList = [
 
 ];
 
-// let categories_container = document.getElementById("categories_container");
-// productsList.forEach(cat =>{
-//     // let newItem = document.createElement("section");
-//     categories_container.innerHTML += `
-//         <section id="${cat.category.toLocaleLowerCase()}">
-//             <h2 class="products_title">${cat.category}</h2>
-//             <div class="cards_container col_4_big col_3_large col_2_medium col_1_small">
-
-//             </div>
-//         </section>
-//     `;
-// });
-// let sections_container = document.querySelectorAll("#categories_container section");
-// sections_container.forEach(sec =>{
-//     productsList.forEach(cat =>{
-//         if(cat.category.toLocaleLowerCase() === sec.id){
-//             console.log(sec)
-//             let pbox = sec.querySelector(".cards_container");
-//             cat.products.forEach(p =>{
-//                 pbox.innerHTML += `
-//                     <div class="card">
-//                         <img src="${p.img}" class="card-img-top" alt="${p.name}">
-//                         <div class="card-body">
-//                             <h5 class="card-title">${p.name}</h5>
-//                             <p class="card-text">$${p.price}</p>
-//                             <a href="#" class="btn btn-primary">Agregar al carrito</a>
-//                         </div>
-//                     </div>
-//                 `;
-//             });
-
-//         }
-//     });
-// });
-
-// console.log("hola")
 
 let categories_container = document.getElementById("categories_container");
 
 productsList.forEach(cat => {
-    categories_container.innerHTML += `
+        categories_container.innerHTML += `
         <section id="${cat.category.toLowerCase()}">
             <h2 class="products_title">${cat.category}</h2>
             <div class="cards_container col_4_big col_3_large col_2_medium col_1_small">
@@ -139,6 +105,7 @@ productsList.forEach(cat => {
                     <div class="card">
                         <img src="${p.img}" class="card-img-top" alt="${p.name}">
                         <div class="card-body">
+                            ${(p.bestSeller) ? `<p>BEST SELLER<p>` : `` }
                             <h5 class="card-title">${p.name}</h5>
                             <p class="card-text">$${p.price}</p>
                             <a href="#" class="btn btn-primary">Agregar al carrito</a>
@@ -149,24 +116,4 @@ productsList.forEach(cat => {
         </section>
     `;
 
-
-    // let sectionHTML = `
-    //     <section id="${cat.category.toLowerCase()}">
-    //         <h2 class="products_title">${cat.category}</h2>
-    //         <div class="cards_container col_4_big col_3_large col_2_medium col_1_small">
-    //             ${cat.products.map(p => `
-    //                 <div class="card">
-    //                     <img src="${p.img}" class="card-img-top" alt="${p.name}">
-    //                     <div class="card-body">
-    //                         <h5 class="card-title">${p.name}</h5>
-    //                         <p class="card-text">$${p.price}</p>
-    //                         <a href="#" class="btn btn-primary">Agregar al carrito</a>
-    //                     </div>
-    //                 </div>
-    //             `).join('')}
-    //         </div>
-    //     </section>
-    // `;
-
-    // categories_container.innerHTML += sectionHTML;
 });
