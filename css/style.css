@@ -127,7 +127,7 @@ nav {
 nav #logoNav img {
   width: 50px;
 }
-nav .right > div {
+nav .right > div:nth-child(2) {
   display: block;
   width: 0.2rem;
   height: 2.2rem;
@@ -158,6 +158,14 @@ nav .right #navBtns #signUp {
 }
 nav .right #navBtns #login {
   background-color: #0863F7;
+}
+nav .right #header__cart_box {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+nav .right #header__cart_box img {
+  width: 1.5em;
 }
 
 @media (max-width: 700px) {
@@ -316,6 +324,54 @@ nav .right #navBtns #login {
 }
 .cards_container .card:hover .btn {
   background-color: #44aa44;
+}
+
+#myModal {
+  display: none;
+  position: fixed;
+  z-index: 3;
+  align-items: center;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+#myModal .modal_content {
+  margin-top: 7em;
+  margin-bottom: 5em;
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0em 3vw 3vw 3vw;
+  width: 60%;
+}
+#myModal .modal_content #close_cart {
+  color: #1C1932;
+  font-size: 38px;
+  cursor: pointer;
+  align-self: flex-end;
+}
+#myModal .modal_content #cart_modal {
+  width: 100%;
+}
+#myModal .modal_content #cart_modal > div {
+  margin-bottom: 1em;
+}
+#myModal .modal_content .product_cart_row {
+  display: flex;
+  align-items: center;
+  padding: 1em;
+  border-bottom: 2px solid #e5e5e5;
+}
+#myModal .modal_content .product_cart_row > div, #myModal .modal_content .product_cart_row > p {
+  width: 33%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 #become_VIP div {

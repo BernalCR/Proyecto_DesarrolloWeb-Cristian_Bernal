@@ -1,0 +1,116 @@
+[
+    {
+        "category": "Alimento",
+        "products": [
+            {
+                "name": "Pro Plan Gatos Cuidado Urinario Urinary 3 Kg",
+                "price": 142.95,
+                "img": "../Resources/Gallery/pro-plan-urinary-3kg-min.jpg",
+                "bestSeller": true,
+                "id": 1,
+                "stock": 5
+            },
+            {
+                "name": "Pedigree High Protein Alimento Completo y Balanceado 4 Kg",
+                "price": 72.8,
+                "img": "../Resources/Gallery/pedigree-high-protein-4kg-min.jpg",
+                "bestSeller": true,
+                "id": 2,
+                "stock": 5
+            },
+            {
+                "name": "Max Professional Line Perros Senior Pollo y Arroz 15 Kg",
+                "price": 223.6,
+                "img": "../Resources/Gallery/max-senior-pollo-arroz-15kg-min.jpg",
+                "id": 3,
+                "stock": 5
+            },
+            {
+                "name": "Dog Chow Perros Senior Vida Sana 17 Kg",
+                "price": 193.5,
+                "img": "../Resources/Gallery/dow-chow-senior-vida-sana-17kg-min.jpg",
+                "id": 4,
+                "stock": 5
+            }
+        ]
+    },
+    {
+        "category": "Snacks",
+        "products": [
+            {
+                "name": "BR for CAT Bombonera para gatos reduce bolas de pelo 350 gr",
+                "price": 22.3,
+                "img": "../Resources/Gallery/br-cat-bombonera-350gr-snack-min.jpg",
+                "bestSeller": true,
+                "id": 5,
+                "stock": 5
+            },
+            {
+                "name": "Churu Snack Receta de Atún con Salmón x 4 Unds 14 g  (Rosa)",
+                "price": 13.8,
+                "img": "../Resources/Gallery/churu-atun-salmon-4-14gr.jpg",
+                "id": 6,
+                "stock": 5
+            },
+            {
+                "name": "Bombonera Delidog Bone por 1 Kg",
+                "price": 33.6,
+                "img": "../Resources/Gallery/delidog-bombonera-1kg.jpg",
+                "id": 7,
+                "stock": 5
+            },
+            {
+                "name": "DentaLife Perros Razas Medianas 119 g",
+                "price": 19.5,
+                "img": "../Resources/Gallery/dentalife-119g.jpg",
+                "id": 8,
+                "stock": 5
+            }
+        ]
+    },
+    {
+        "category": "Juguetes",
+        "products": [
+            {
+                "name": "Hueso Juguete comestible paleta de cerdo",
+                "price": 5.5,
+                "img": "../Resources/Gallery/hueso-juguete-paleta-de-cerdo.jpg",
+                "id": 9,
+                "stock": 5
+            },
+            {
+                "name": "Pelota Lick And Snak 8 cm",
+                "price": 48,
+                "img": "../Resources/Gallery/link-and-snack-8cm.jpg",
+                "id": 10,
+                "stock": 5
+            },
+            {
+                "name": "Juguete caña de pesca para gatos",
+                "price": 8,
+                "img": "../Resources/Gallery/cana-pesca-gatos.jpg",
+                "id": 11,
+                "stock": 5
+            }
+        ]
+    },
+    {
+        "category": "Accesorios",
+        "products": [
+            {
+                "name": "Maxicat Arena para gatos Aroma a Café 25 Kg",
+                "price": 78.7,
+                "img": "../Resources/Gallery/maxicat-arena-cafe-25kg.jpg",
+                "id": 12,
+                "stock": 5
+            },
+            {
+                "name": "Collar Felcan ID Talla Única Morado",
+                "price": 42,
+                "img": "../Resources/Gallery/collar-felcan-unica-morado.jpg",
+                "id": 13,
+                "stock": 5
+            }
+        ]
+    }
+]
