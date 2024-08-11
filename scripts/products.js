@@ -141,8 +141,10 @@ cartBox.addEventListener("click", () =>{
         cartModal.innerHTML += `
         <div class="product_cart_row" id="cart_row${product.id}">
             <div>
-                <p>${product.name}</p>
-                <p>${product.price}</p>
+                <div>
+                    <p>${product.name}</p>
+                    <p>${product.price}</p>
+                </div>
             </div>
 
             <p>${product.cant}</p>
